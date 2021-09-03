@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <!-- Biblioteca bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -31,26 +33,30 @@
     </nav>
     <div id="main" class="container-fluid">
         <h3 class="page-header">Adicionar um item</h3>
-        <form action="index.html">
+        <form action="index.html" id="add_novo_cliente">
             <!-- Area de campos do form-->
             <div class="row">
                 <div class="form-group col-md-4">
-                    <label for="campo1">Campo Um</label>
-                    <input type="text" class="form-control" id="campo1">
+                    <label class="control-label" for="nome">Nome: </label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite um nome" name="nome" required />
                 </div>
-                    <div class="form-group col-md-4">
-                    <label for="campo2">Campo Dois</label>
-                    <input type="text" class="form-control" id="campo2">
+                <div class="form-group col-md-4">
+                    <label class="control-label" for="sobrenome">Sobrenome: </label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite um sobrenome" name="sobrenome" required />
                 </div>
-                    <div class="form-group col-md-4">
-                    <label for="campo3">Campo Três</label>
-                    <input type="text" class="form-control" id="campo3">
+                <div class="form-group col-md-4">
+                    <label class="control-label" for="endereco">Endereco: </label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Digite um endereco" name="endereco" required />
+                </div>
+                <div class="form-group col-md-4">
+                    <label class="control-label" for="idade">Idade: </label>
+                    <input type="text" class="form-control" id="idade" placeholder="Digite uma idade" name="idade" required />
                 </div>
             </div>
             <hr/>
             <div id="actions" class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" class="btn btn-primary" id="btn-add-novo-cliente">Salvar</button>
                     <a href="index.html" class="btn btn-default">Cancelar</a>
                 </div>
             </div>
@@ -58,5 +64,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/salvar_cliente.js"></script>
 </body>
+
 </html>
